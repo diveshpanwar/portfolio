@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Divesh Panwar">
+    <meta name="description" content="My Portfolio website">
+    <title>Divesh Panwar - Portfolio</title>
+    <!-- Importing Fonts and Icons-->
+    <script src="https://use.fontawesome.com/fb649ca6f2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Righteous|Ubuntu" rel="stylesheet">
+    <!-- Adding CSS Files -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media-query.css">
+    <!-- Adding JS files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Slider -->
+    <script src="js/slider.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header class="header flex">
+        <div class="logo">
+          <picture>
+            <source media="(min-width: 700px)" srcset="img/logo_large.jpg">
+            <source media="(min-width: 500px)" srcset="img/logo.jpg">
+            <img src="img/logo.jpg" alt="My Display Image">
+          </picture>
+        </div>
+        <div class="title">
+          <h1 class="text-super text-thick">Divesh Panwar</h1>
+          <h3 class="text-muted text-thin">Front End Web Developer</h3>
+        </div>
+      </header>
+      <hr class="hr-thick">
+      <div class="article">
+            <img class="mySlides first" src="img/laxmi_large.png" alt="Laxmi tutorials Website Homepage" sizes="(min-width: 700px) 100vw, (max-width: 699px) 100vw" srcset="img/laxmi.png 300w, img/laxmi_large.png 7000w">
+            <img class="mySlides other" src="img/portal_large.png" alt="Portal Website Homepage" sizes="(min-width: 700px) 100vw, (max-width: 699px) 100vw" srcset="img/portal.png 300w, img/portal_large.png 7000w">
+            <img class="mySlides other" src="img/uiit_large.png" alt="UIIT Website Homepage" sizes="(min-width: 700px) 100vw, (max-width: 699px) 100vw" srcset="img/uiit.png 300w, img/uiit_large.png 7000w">
+          <button class="btn-left" onclick="plusDivs(-1)">&#10094;</button>
+          <button class="btn-right" onclick="plusDivs(1)">&#10095;</button>
+      </div>
+      <div class="featured-work flex">
+        <h2 class="featured-title">Featured Work</h2>
+
+        <div class="project-box">
+        <div class="project">
+          <picture>
+            <source media="(min-width: 500px) and (max-width: 700px)" srcset="img/laxmi.png">
+            <source media="(min-width: 300px)" srcset="img/laxmi_mobile.png">
+            <img src="img/laxmi_mobile.png" alt="Project 1 Laxmi Tutorials" class="project_img">
+          </picture>
+        </div>
+        <h4 class="project-title">Laxmi Tutorials</h4>
+        <p class="project-description">This project is based on core PHP.
+        </p>
+          <button type="button" name="button" data-toggle="modal" data-target="#project1">Know More</button>
+        </div>
+        <div class="project-box">
+        <div class="project">
+          <picture>
+            <source media="(min-width: 500px) and (max-width: 700px)" srcset="img/uiit.png">
+            <source media="(min-width: 300px)" srcset="img/uiit_mobile.png">
+            <img src="img/uiit_mobile.png" alt="Project 2 UIIT Website" class="project_img">
+          </picture>
+        </div>
+        <h4 class="project-title">UIIT Website</h4>
+        <p class="project-description">This project is based on HTML, CSS and JS.
+        </p>
+          <button type="button" name="button"  data-toggle="modal" data-target="#project2">Know More</button>
+        </div>
+        <div class="project-box">
+        <div class="project">
+          <picture>
+            <source media="(min-width: 500px) and (max-width: 700px)" srcset="img/portal.png">
+            <source media="(min-width: 300px)" srcset="img/portal_mobile.png">
+            <img src="img/portal_mobile.png" alt="Project 3 UIIT Portal" class="project_img">
+          </picture>
+        </div>
+        <h4 class="project-title">UIIT Portal</h4>
+        <p class="project-description">This project is based on Laravel framework.
+        </p>
+          <button type="button" name="button" data-toggle="modal" data-target="#project3">Know More</button>
+        </div>
+      </div>
+      <hr class="hr-thick">
+      <footer class="footer text-thick">
+        Follow me on <a href="https://www.facebook.com/divesh.panwar.79"><i class="fa fa-google-plus-square"></i></a>
+        <a href="https://plus.google.com/+diveshpanwar/posts"><i class="fa fa-facebook-square"></i></a>
+      </footer>
+    </div>
+    <!--Project 1 Modal -->
+  <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="project1Label" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title" id="project1Label">Laxmi Tutorials</h4>
+              </div>
+              <div class="modal-body">
+                <picture>
+                  <source media="(min-width: 700px)" srcset="img/laxmi.png">
+                  <source media="(min-width: 0px)" srcset="img/laxmi_mobile.png">
+                  <img src="img/laxmi.png" alt="Laxmi Tutorials Website">
+                </picture>
+                  <p class="modal-description">
+                  This website belongs to a coaching institute "Laxmi Tutorials and Training Institute", situated in the Shimla, H.P INDIA. This project is dynamic and uses Bootstrap, CSS, and Core PHP.
+                </p>
+                  <a href="https://laxmitutorials.com" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> Visit Page</a>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+  </div>
+ <!-- Modals end -->
+ <!-- Project 2 Modal -->
+  <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="project2Label" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title" id="project2Label">UIIT Website</h4>
+              </div>
+              <div class="modal-body">
+                <picture>
+                  <source media="(min-width: 700px)" srcset="img/uiit.png">
+                  <source media="(min-width: 0px)" srcset="img/uiit_mobile.png">
+                  <img src="img/uiit.png" alt="UIIT Website">
+                </picture>
+                <p class="modal-description">
+                  This website belongs to an educational Institution, "University Institute of Information Technology". This website is built using CSS, HTML and JS.
+                  </p>
+                  <a href="http://uiit.ac.in/" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> Visit Page</a>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+  </div>
+ <!-- Modals end -->
+ <!-- Project 3 Modal -->
+  <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="project3Label" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title" id="project3Label">UIIT Portal</h4>
+              </div>
+              <div class="modal-body">
+                <picture>
+                  <source media="(min-width: 700px)" srcset="img/portal.png">
+                  <source media="(min-width: 0px)" srcset="img/portal_mobile.png">
+                  <img src="img/portal.png" alt="UIIT Portal Website">
+                </picture>
+                <p class="modal-description">
+                  This website belongs to an educational Institution, "University Institute of Information Technology". This website is built using laravel, CSS, HTML and JS and is completely dynamic.
+                </p>
+                  <a href="http://uiit.ac.in/" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i> Visit Page</a>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+  </div>
+ <!-- Modals end -->
+
+  </body>
+</html>
