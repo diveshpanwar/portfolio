@@ -19,8 +19,11 @@
     <script src="js/slider.js"></script>
   </head>
   <body>
+    <!-- Main container begins -->
     <div class="container-fluid">
+      <!-- Header Begins -->
       <header class="header flex">
+        <!-- Logo Section Begins-->
         <div class="logo">
           <picture>
             <source media="(min-width: 700px)" srcset="img/logo_large.jpg">
@@ -28,22 +31,32 @@
             <img src="img/logo.jpg" alt="My Display Image">
           </picture>
         </div>
+        <!-- End of logo section -->
+        <!-- Title section begins -->
         <div class="title">
           <h1 class="text-super text-thick">Divesh Panwar</h1>
           <h3 class="text-muted text-thin">Front End Web Developer</h3>
         </div>
+        <!-- end of title section -->
       </header>
+      <!-- End of header section -->
       <hr class="hr-thick">
+      <!-- The main content section begins (For this I have included a slider)-->
       <div class="article">
+        <!-- images of the slider -->
             <img class="mySlides first" src="img/portal_large.png" alt="Portal Website Homepage" sizes="(min-width: 700px) 100vw, (max-width: 699px) 100vw" srcset="img/portal.png 300w, img/portal_large.png 7000w">
             <img class="mySlides other" src="img/uiit_large.png" alt="UIIT Website Homepage" sizes="(min-width: 700px) 100vw, (max-width: 699px) 100vw" srcset="img/uiit.png 300w, img/uiit_large.png 7000w">
             <img class="mySlides other" src="img/laxmi_large.png" alt="Laxmi tutorials Website Homepage" sizes="(min-width: 700px) 100vw, (max-width: 699px) 100vw" srcset="img/laxmi.png 300w, img/laxmi_large.png 7000w">
+            <!-- Buttons to change images i.e move to next or previous one -->
           <button class="btn-left" onclick="plusDivs(-1)">&#10094;</button>
           <button class="btn-right" onclick="plusDivs(1)">&#10095;</button>
       </div>
+      <!-- The main content section ends -->
+      <!-- Featured work section begins -->
       <div class="featured-work flex">
+        <!-- title of featured work -->
         <h2 class="featured-title">Featured Work</h2>
-
+        <!-- Project 1 box begins -->
         <div class="project-box">
         <div class="project">
           <picture>
@@ -52,11 +65,15 @@
             <img src="img/laxmi_mobile.png" alt="Project 1 Laxmi Tutorials" class="project_img">
           </picture>
         </div>
+        <!-- project 1 title -->
         <h4 class="project-title">Laxmi Tutorials</h4>
+        <!-- project 1 description -->
         <p class="project-description">This project is based on core PHP.
         </p>
           <button type="button" name="button" data-toggle="modal" data-target="#project1">Know More</button>
         </div>
+        <!-- End of project 1 box -->
+        <!-- Project 2 box begins -->
         <div class="project-box">
         <div class="project">
           <picture>
@@ -65,11 +82,15 @@
             <img src="img/uiit_mobile.png" alt="Project 2 UIIT Website" class="project_img">
           </picture>
         </div>
+        <!-- project 2 title -->
         <h4 class="project-title">UIIT Website</h4>
+        <!-- project 2 description -->
         <p class="project-description">This project is based on HTML, CSS and JS.
         </p>
           <button type="button" name="button"  data-toggle="modal" data-target="#project2">Know More</button>
         </div>
+        <!-- end of project 2 box -->
+        <!-- project 3 box begins -->
         <div class="project-box">
         <div class="project">
           <picture>
@@ -78,18 +99,26 @@
             <img src="img/portal_mobile.png" alt="Project 3 UIIT Portal" class="project_img">
           </picture>
         </div>
+        <!-- project 3 title -->
         <h4 class="project-title">UIIT Portal</h4>
+        <!-- project 3 description -->
         <p class="project-description">This project is based on Laravel framework.
         </p>
           <button type="button" name="button" data-toggle="modal" data-target="#project3">Know More</button>
         </div>
+        <!-- end of project 3 box -->
       </div>
+      <!-- End of featured work section -->
       <hr class="hr-thick">
+      <!-- footer section begins -->
       <footer class="footer text-thick">
         Follow me on <a href="https://www.facebook.com/divesh.panwar.79"><i class="fa fa-google-plus-square"></i></a>
         <a href="https://plus.google.com/+diveshpanwar/posts"><i class="fa fa-facebook-square"></i></a>
       </footer>
+      <!-- end of footer section -->
     </div>
+    <!-- End of main container -->
+    <!-- modals begins -->
     <!--Project 1 Modal -->
   <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="project1Label" aria-hidden="true">
       <div class="modal-dialog">
@@ -165,6 +194,6 @@
       </div>
   </div>
  <!-- Modals end -->
-
+<!-- end of modals -->
   </body>
 </html>
